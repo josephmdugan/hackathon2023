@@ -1,6 +1,7 @@
 /* Main body background */
 body {
     background-color: #eee;
+    /* credit to cbrimages and Wizards of the Coast for the background image shown*/
     background-image: url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/08/dnd-5e-dragonlance-chapter-2-art-1.jpg");
     background-repeat: repeat;
     background-size: 150%;

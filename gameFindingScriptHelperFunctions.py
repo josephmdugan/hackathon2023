@@ -37,10 +37,16 @@ def open_file_and_clean_data(filename):
 
 def sort_users(users):
   time_groups = []
+  inserted_times = []
 
   for i in range(len(users)):
-      if users[i].time not in time_groups:
-        time_groups.append(time_group(users[i].time))
+      if users[i].time not in inserted_times:
+        inserted_times.append(users[i].time)
+        
+  inserted_times.sort()
+
+  for i in range(len(inserted_times)):
+     time_groups.append(time_group(inserted_times[i]))
 
   users_added = []
 
