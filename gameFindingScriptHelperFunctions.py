@@ -33,6 +33,49 @@ def open_file_and_clean_data(filename):
     
    return cleanedData
 
+# def time_sort(times):
+#   new_time_array = []
+#   sun_far_index = 0
+#   mon_far_index = 0
+#   tue_far_index = 0
+#   wed_far_index = 0
+#   thur_far_index = 0
+#   fri_far_index = 0
+#   sat_far_index = 0
+#   for i in range(len(times)):
+#     if "Sunday" in times[i]:
+#       new_time_array[sun_far_index] = times[i]
+#       sun_far_index += 1
+#     elif "Monday" in times[i]:
+#        new_time_array[mon_far_index] = times[i]
+#        mon_far_index += 1
+#     elif "Tuesday" in times[i]:
+#       new_time_array[tue_far_index] = times[i]
+#       tue_far_index += 1
+#     elif "Wednesday" in times[i]:
+#       new_time_array[wed_far_index] = times[i]
+#       wed_far_index += 1
+#     elif "Thursday" in times[i]:
+#       new_time_array[thur_far_index] = times[i]
+#       thur_far_index += 1
+#     elif "Friday" in times[i]:
+#       new_time_array[fri_far_index] = times[i]
+#       fri_far_index += 1
+#     elif "Saturday" in times[i]:
+#       new_time_array[sat_far_index] = times[i]
+#       sat_far_index += 1
+      
+#     else:
+#       pass
+#     sun_far_index = 0
+#     mon_far_index = sun_far_index + 1
+#     tue_far_index = mon_far_index + 1
+#     wed_far_index = tue_far_index + 1
+#     thur_far_index = wed_far_index + 1
+#     fri_far_index = thur_far_index + 1
+#     sat_far_index = fri_far_index + 1
+#   return new_time_array
+     
 
 
 def sort_users(users):
