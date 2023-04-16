@@ -53,11 +53,11 @@ def sort_users(users):
   for i in range(len(users)):
       for j in range(len(time_groups)):
         if users[i].username not in users_added and users[i].time == time_groups[j].time and time_groups[j].length < 5:
-            time_groups[j].people.append(users[i].username)
+            time_groups[j].people.insert(j, users[i].username)
             time_groups[j].length += 1
             users_added.append(users[i].username)
         elif (users[i].username not in users_added and users[i].time == time_groups[j].time and j == len(time_groups)):
-            time_groups.append(time_group(users[i].time))
+            time_groups.insert(j, (time_group(users[i].time)))
             users_added.append(users[i].username)
             group_num = len(time_groups) -1
             time_groups[group_num].people.append(users[i].username)
